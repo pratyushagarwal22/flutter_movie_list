@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'movie_list.dart';
 
 class Header extends StatefulWidget {
   const Header({Key? key}) : super(key: key);
@@ -8,6 +9,7 @@ class Header extends StatefulWidget {
 }
 
 class _HeaderState extends State<Header> {
+
   @override
   Widget build(BuildContext context) {
 
@@ -42,7 +44,7 @@ class _HeaderState extends State<Header> {
                             backgroundColor: Colors.white70,
                             radius: 35,
                             child: CircleAvatar(
-                              backgroundImage: NetworkImage('https://images.unsplash.com/photo-1481349518771-20055b2a7b24?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cmFuZG9tfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80'),
+                              backgroundImage: AssetImage('assets/profile_pic.png'),
                               radius: 30,
                             ),
                           ),
