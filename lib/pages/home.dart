@@ -17,13 +17,14 @@ class _HomeState extends State<Home> {
       body: CustomScrollView(
         slivers: [
           SliverAppBar(
+            automaticallyImplyLeading: false,
             centerTitle: true,
             title: Text('Movie List'),
             pinned: true,
             actions: [
               IconButton(
                 onPressed: () {
-                  Navigator.pushNamed(context, '/login');
+                  Navigator.pushNamed(context, '/start');
                 },
                 icon: Icon(Icons.logout),
               ),
@@ -36,7 +37,11 @@ class _HomeState extends State<Home> {
       extendBody: true,
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+
+          // ADD POP UP
+
+        },
         child: Icon(Icons.add),
       ),
       bottomNavigationBar: ClipRRect(
@@ -52,14 +57,14 @@ class _HomeState extends State<Home> {
                 IconButton(
                   onPressed: () {},
                   icon: Icon(Icons.add_alert),
-                  color: Colors.white,
+                  color: Colors.blue,
                 ),
                 Spacer(),
                 Spacer(),
                 IconButton(
                   onPressed: () {},
                   icon: Icon(Icons.turned_in),
-                  color: Colors.white,
+                  color: Colors.blue,
                 ),
                 Spacer(),
               ],

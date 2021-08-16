@@ -3,6 +3,7 @@ import './pages/loading.dart';
 import './pages/home.dart';
 import './pages/login.dart';
 import './pages/start.dart';
+import './pages/register.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -14,6 +15,7 @@ void main() {
     routes: {
       '/start': (context) => Start(),
       '/login': (context) => Login(),
+      '/register': (context) => Register(),
       '/': (context) => Loading(),
       '/home': (context) => Home(),
     },
